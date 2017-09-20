@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>鲁大师_鲁大师官方网站</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen">
+		<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript">
+		//Slider
+		jQuery(window).load(function() {
+			jQuery('#slider').nivoSlider({
+			effect: 'fold',
+			slices:15,
+			animSpeed:500, //Slide transition speed
+			pauseTime:5000,
+			controlNav: false,
+			directionNavHide: true,
+			prevText: 'prev',
+			nextText: 'next',
+			startSlide:0, //Set starting Slide (0 index)
+			directionNav:true, //Next &amp; Prev
+			afterLoad: function(){
+				jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+				},
+				beforeChange: function(){
+				jQuery(".nivo-caption").animate({top:"-450"}, {easing:"easeInBack", duration: 500})
+				},
+				afterChange: function(){
+				jQuery(".nivo-caption").animate({top:"60"}, {easing:"easeOutBack", duration: 500})
+				}
+			});
+			
+		});
+		
+		</script>
+	</head>
+
+	<body>
+		<div class="nav_box">
+			<div class="nav">
+				<div class="nav_img">
+					<a href="javascript:;"><img src="img/logo.png" /></a>
+				</div>
+				<ul>
+					<li><a href="" class="selected">首页</a></li>
+					<li><a href="">电脑版</a></li>
+					<li><a href="">安卓版</a></li>
+					<li><a href="">游戏库</a></li>
+					<li><a href="">手机模拟大师</a></li>
+					<li><a href="">鲁蛋硬件</a></li>
+					<li>
+						<a href="">二手iPhone</a>
+						<span class="erhuo">
+							<img src="img/5981a221113b8.gif"/>
+						</span>
+					</li>
+					<li><a href="">论坛</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="slider-container">
+
+			<div id="slider" class="nivoSlider">
+				<img title="#htmlcaption1" alt="" src="images/slider1.jpg">
+				<img title="#htmlcaption2" alt="" src="images/slider2.jpg">
+				<img title="#htmlcaption3" alt="" src="images/slider3.jpg">
+				<!--<img title="#htmlcaption4" alt="" src="images/slider4.jpg">-->
+			</div>
+			<!-- #slider -->
+
+			<div id="htmlcaption1" class="nivo-html-caption">
+				<span class="sdate">
+					<div class="ib_text">
+						<p class="text_p1">鲁大师电脑版</p>
+						<p class="text_p2">硬件防护全面升级，全新官网为你领航</p>
+						<p class="text_p3">2017-09-08更新 版本：5.15.16.1295</p>
+						<p class="text_p3">
+							支持win2000以上的所有Windows系统版本
+							<a href="p3_son">更新日志</a>
+						</p>
+						<a href="" class="text_download">立即下载</a>
+						<a href="" class="text_a">攻略：如何识别假鲁大师</a>
+					</div>
+				</span>
+			</div>
+
+			<div id="htmlcaption2" class="nivo-html-caption">
+				<span class="sdate">
+					<div class="ib_text">
+						<p class="text_p1">鲁大师电脑版</p>
+						<p class="text_p2">硬件防护全面升级，全新官网为你领航</p>
+						<p class="text_p3">2017-09-08更新 版本：5.15.16.1295</p>
+						<p class="text_p3">
+							支持win2000以上的所有Windows系统版本
+							<a href="p3_son">更新日志</a>
+						</p>
+						<a href="" class="text_download">立即下载</a>
+						<a href="" class="text_a">攻略：如何识别假鲁大师</a>
+					</div>
+				</span>
+				
+			</div>
+
+			<div id="htmlcaption3" class="nivo-html-caption">
+				<span class="sdate">
+					<div class="ib_text">
+						<p class="text_p1">鲁大师电脑版</p>
+						<p class="text_p2">硬件防护全面升级，全新官网为你领航</p>
+						<p class="text_p3">2017-09-08更新 版本：5.15.16.1295</p>
+						<p class="text_p3">
+							支持win2000以上的所有Windows系统版本
+							<a href="p3_son">更新日志</a>
+						</p>
+						<a href="" class="text_download">立即下载</a>
+						<a href="" class="text_a">攻略：如何识别假鲁大师</a>
+					</div>
+				</span>
+				
+			</div>
+		</div>
+		<!--<div class="banner_box">
+			<div class="banner">
+				<img src="img/ibanner_img_01.png"/>
+				<div class="ib_text">
+					<p class="text_p1">鲁大师电脑版</p>
+					<p class="text_p2">硬件防护全面升级，全新官网为你领航</p>
+					<p class="text_p3">2017-09-08更新 版本：5.15.16.1295</p>
+					<p class="text_p3">
+						支持win2000以上的所有Windows系统版本
+						<a href="p3_son">更新日志</a>
+					</p>
+					<a href="" class="text_download">立即下载</a>
+					<a href="" class="text_a">攻略：如何识别假鲁大师</a>
+				</div>
+			</div>
+		</div>-->
+		<div class="icontent">
+			<div class="ic_item">
+				<img src="img/ic_item_01.png" />
+				<div class="item_son">
+					<div class="title">
+						<i class="title_i diannao">
+							<span>鲁大师电脑版</span>
+						</i>
+
+					</div>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 电脑性能评测
+					</p>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 电脑硬件真伪辨别
+					</p>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 电脑硬件安全防护和温度监控
+					</p>
+					<a href="javascript:;" class="item_son_download">立即下载</a>
+				</div>
+			</div>
+			<div class="ic_item">
+				<img src="img/ic_item_02.png" />
+				<div class="item_son">
+					<div class="title">
+						<i class="title_i shouji">
+							<span>鲁大师安卓版</span>
+						</i>
+
+					</div>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 手机性能评测
+					</p>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 一键验证手机真假
+					</p>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 手机降温、硬件垃圾清理、内存加速
+					</p>
+					<a href="javascript:;" class="item_son_download">立即下载</a>
+				</div>
+			</div>
+			<div class="ic_item">
+				<img src="img/5927939261982.png" />
+				<div class="item_son rb">
+					<div class="title">
+						<i class="title_i moni">
+							<span>手机模拟大师</span>
+						</i>
+
+					</div>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 电脑玩手机游戏
+					</p>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 大屏键鼠操作快人一步
+					</p>
+					<p class="item_son_p">
+						<img src="img/point.png" /> 小号多开24小时随心挂机
+					</p>
+					<a href="javascript:;" class="item_son_download">立即下载</a>
+				</div>
+			</div>
+		</div>
+		<div class="plist">
+			<p class="plist_p">电脑软件</p>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">鲁大师电脑版</p>
+					<p class="pitem_txt_p2">电脑测评、监测、保护您的硬件安全</p>
+					<p>
+						<a href="">下载</a>
+						<span>50.19M</span>
+					</p>
+				</div>
+			</div>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">鲁大师电脑版</p>
+					<p class="pitem_txt_p2">电脑测评、监测、保护您的硬件安全</p>
+					<p>
+						<a href="">下载</a>
+						<span>50.19M</span>
+					</p>
+				</div>
+			</div>
+			<div class="pitem mr">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">鲁大师电脑版</p>
+					<p class="pitem_txt_p2">电脑测评、监测、保护您的硬件安全</p>
+					<p>
+						<a href="">下载</a>
+						<span>50.19M</span>
+					</p>
+				</div>
+			</div>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">鲁大师电脑版</p>
+					<p class="pitem_txt_p2">电脑测评、监测、保护您的硬件安全</p>
+					<p>
+						<a href="">下载</a>
+						<span>50.19M</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="plist">
+			<p class="plist_p">手机软件</p>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">鲁大师安卓版</p>
+					<p class="pitem_txt_p2">一亿用户选择的手机硬件大师</p>
+					<p>
+						<a href="">下载</a>
+						<span>50.19M</span>
+					</p>
+				</div>
+			</div>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">省电王</p>
+					<p class="pitem_txt_p2">智能省电方案，延长电池使用时间</p>
+					<p>
+						<a href="">下载</a>
+						<span>50.19M</span>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="plist bb">
+			<p class="plist_p">智能硬件</p>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">鲁蛋智充</p>
+					<p class="pitem_txt_p2">解决手机使用“电脑、车载充电器、非原装充电器、充电宝”充电速度慢问题</p>
+					<p>
+						<a href="">立即查看</a>
+						<span></span>
+					</p>
+				</div>
+			</div>
+			<div class="pitem">
+				<i class="tb_logo"></i>
+				<div class="pitem_txt">
+					<p class="pitem_txt_p1">小鲁二货</p>
+					<p class="pitem_txt_p2">作为鲁大师出品的二手电商品牌，是专注于二手数码产品销售的交易商城。</p>
+					<p>
+						<a href="">立即查看</a>
+						<span></span>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="links_box">
+			<div class="links">	
+				<a href="">优化大师</a>
+				<a href="">360安全中心</a>
+				<a href="">得意生活</a>
+				<a href="">ROM之家</a>
+				<a href="">极速PDF</a>
+				<a href="">星探ZOL</a>
+				<a href="">软件下载</a>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="">联系我们</a> | 
+				<a href="">常见问题</a> | 
+				<a href="">电脑功耗</a> | 
+				<a href="">意见反馈</a> | 
+				<a href="">友情链接</a>
+			</p>
+			<p>Copyright © 2008-2017 <a href="">Ludashi.com</a> All Rights Reserved 奇鲁科技有限公司</p>
+			<p>
+				<a href="">蜀ICP备15008964号-1</a>
+			</p>
+			<p>
+				<a href="">川公网安备 51019002000701号</a>
+			</p>
+		</div>
+	</body>
+
+</html>
